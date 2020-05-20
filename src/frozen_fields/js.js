@@ -27,7 +27,7 @@ function setFrozenFields(frozen) {
         }
         var src = (frozen[i])?src_frozen:src_unfrozen;
         var un_freeze = (frozen[i])?"Unfreeze":"Freeze";
-        var div = `<img id=i${i} src='${src}' title='${un_freeze} field (${hotkey_toggle_field})' style="height:.9em" onclick='onFrozen(${i});'/>`;
-        $td_name.prepend(div);
+        var img_html = `<img id=i${i} src='${src}' title='${un_freeze} field (${hotkey_toggle_field})' style="height:.9em" onclick='onFrozen(${i});'/>`;
+        $td_name.prepend(img_html);
     }
 }
