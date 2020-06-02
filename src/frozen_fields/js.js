@@ -1,5 +1,3 @@
-console.log("foo");
-
 function onFrozen(idx) {
     wasFrozen = frozenFields[idx];
     pycmd("frozen:" + idx);
